@@ -1,0 +1,978 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "StudentCourse_Manager"
+			add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+				name: "tabbedPane1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel9"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+						"vgap": 3
+					} ) {
+						name: "panel12"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel13"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "North"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel15"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "South"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel17"
+							add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+								name: "tabbedPane2"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel19"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel6"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel7"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel8"
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button3"
+											"text": "确认删除"
+											addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel14"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel16"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label12"
+											"text": "请输入您想要删除的学生学号：（仅可通过学号删除，11位，必填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_D_Studentid"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "删除"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel20"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel18"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel28"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel29"
+										add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+											name: "panel32"
+											add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+												name: "panel33"
+											}, new FormLayoutConstraints( class java.lang.String ) {
+												"value": "West"
+											} )
+											add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+												name: "panel34"
+											}, new FormLayoutConstraints( class java.lang.String ) {
+												"value": "East"
+											} )
+											add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+												name: "panel35"
+												add( new FormComponent( "javax.swing.JLabel" ) {
+													name: "label19"
+													"text": "Tips：请在第一行输入想要修改的学生学号，并在后面5行填写想要将该生的改行信息修改为何值。（暂不支持批量修改）"
+												}, new FormLayoutConstraints( class java.lang.String ) {
+													"value": "Center"
+												} )
+												add( new FormComponent( "javax.swing.JButton" ) {
+													name: "button4"
+													"text": "确认修改"
+													addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+												}, new FormLayoutConstraints( class java.lang.String ) {
+													"value": "North"
+												} )
+											}, new FormLayoutConstraints( class java.lang.String ) {
+												"value": "Center"
+											} )
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel30"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 6
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel31"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label13"
+											"text": "请输入您需要修改的学生学号：（仅可通过学号确定，11位，必填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "Studentid"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label14"
+											"text": "学生学号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_U_Studentid"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label15"
+											"text": "学生姓名（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_U_Studentname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label16"
+											"text": "学生性别（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JComboBox" ) {
+											name: "S_U_Studentsex"
+											"model": new javax.swing.DefaultComboBoxModel {
+												selectedItem: "男"
+												addElement( "男" )
+												addElement( "女" )
+											}
+											"selectedIndex": -1
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label17"
+											"text": "学生年龄（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_U_Studentage"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label18"
+											"text": "学生院系（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_U_Studentdept"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "修改"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel21"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel1"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel2"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel3"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label11"
+											"text": "Tips： 如果想要查询所有学生的信息，请不要填写任何查找关键字，直接点击“查询”按钮即可。"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button2"
+											"text": "查询"
+											addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "North"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel4"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 5
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel5"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label1"
+											"text": "学生学号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_R_Studentid"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label2"
+											"text": "学生姓名（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_R_Studentname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label5"
+											"text": "学生性别（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JComboBox" ) {
+											name: "S_R_Studentsex"
+											"model": new javax.swing.DefaultComboBoxModel {
+												selectedItem: "男"
+												addElement( "男" )
+												addElement( "女" )
+											}
+											"selectedIndex": -1
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label6"
+											"text": "学生年龄（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_R_Studentage"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label10"
+											"text": "学生院系（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_R_Studentdept"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "查询"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel22"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel23"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel24"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+										"vgap": 10
+									} ) {
+										name: "panel25"
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button1"
+											"text": "插入数据"
+											addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Insert_to_Student", true ) )
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel26"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 5
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel27"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label3"
+											"text": "学生学号（11位必填，数字）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_I_Studentid"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label4"
+											"text": "学生姓名（选填，汉字）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_I_Studentname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label7"
+											"text": "学生性别（选择）"
+										} )
+										add( new FormComponent( "javax.swing.JComboBox" ) {
+											name: "S_I_Studentsex"
+											"model": new javax.swing.DefaultComboBoxModel {
+												selectedItem: "男"
+												addElement( "男" )
+												addElement( "女" )
+											}
+											"selectedIndex": -1
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label8"
+											"text": "学生年龄（选填，数字）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_I_Studentage"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label9"
+											"text": "学生院系（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "S_I_Studentdept"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "增加"
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "学生表"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel10"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel36"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel37"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "North"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel38"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "South"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel39"
+							add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+								name: "tabbedPane3"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel40"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel47"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel48"
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button6"
+											"text": "确认删除"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel49"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel53"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel54"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label27"
+											"text": "请输入您想要删除的课程编号：（仅可通过课程号删除，必填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_D_Cno"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "删除"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel41"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel60"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel61"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+										"vgap": 5
+										"hgap": 5
+									} ) {
+										name: "panel62"
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button8"
+											"text": "确认修改"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label47"
+											"text": "Tips：请在第一行输入想要修改的课程编号，并在后面4行填写想要将该生的改行信息修改为何值。（暂不支持批量修改）"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "South"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel63"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 5
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel64"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label33"
+											"text": "请输入您需要修改的课程编号：（仅可通过课程号确定，必填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "Course_cno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label34"
+											"text": "课程编号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_U_Cno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label35"
+											"text": "课程名（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_U_Cname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label36"
+											"text": "课程先修课（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_U_Cpno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label37"
+											"text": "学分（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_U_Ccredit"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "修改"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel42"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel55"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel56"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel57"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label32"
+											"text": "Tips： 如果想要查询所有课程的信息，请不要填写任何查找关键字，直接点击“查询”按钮即可。"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "South"
+										} )
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button7"
+											"text": "查询"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel58"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 4
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel59"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label28"
+											"text": "课程号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_R_Cno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label29"
+											"text": "课程名称（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_R_Cname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label30"
+											"text": "先修课编号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_R_Cpno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label31"
+											"text": "学分（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_R_Ccredit"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "查询"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel43"
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel44"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+										name: "panel45"
+										add( new FormComponent( "javax.swing.JButton" ) {
+											name: "button5"
+											"text": "确认插入"
+										}, new FormLayoutConstraints( class java.lang.String ) {
+											"value": "Center"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel50"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "West"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+										name: "panel51"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "East"
+									} )
+									add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+										"columns": 2
+										"rows": 4
+										"hgap": 10
+										"vgap": 10
+									} ) {
+										name: "panel52"
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label23"
+											"text": "课程号（必填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_I_Cno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label24"
+											"text": "课程名称（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_I_Cname"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label25"
+											"text": "先修课编号（选填）"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_I_Cpno"
+										} )
+										add( new FormComponent( "javax.swing.JLabel" ) {
+											name: "label26"
+											"text": "学分"
+										} )
+										add( new FormComponent( "javax.swing.JTextField" ) {
+											name: "C_I_Ccredit"
+										} )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( null ) {
+									"title": "增加"
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "课程表"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+					name: "panel11"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "panel74"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel75"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "North"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel76"
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "South"
+						} )
+						add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+							name: "tabbedPane4"
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel78"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel86"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "North"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel87"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "West"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel88"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "East"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+									"hgap": 5
+									"vgap": 5
+								} ) {
+									name: "panel89"
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "button10"
+										"text": "确认删除"
+										addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "South"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+									"columns": 2
+									"rows": 2
+									"hgap": 10
+									"vgap": 10
+								} ) {
+									name: "panel90"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label38"
+										"text": "选课学生学号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_D_Sno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label39"
+										"text": "选课课程编号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_D_Cno"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "Center"
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"title": "删除"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel91"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel92"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "North"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel93"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "West"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+									"vgap": 5
+									"hgap": 5
+								} ) {
+									name: "panel94"
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "button11"
+										"text": "确认修改"
+										addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button11ActionPerformed", true ) )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label48"
+										"text": "Tips：请在第一行输入想要修改的学号和课程编号，并在后面一行填写想要将该选课信息修改为何值。（暂不支持批量修改）"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "South"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "South"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel95"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "East"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+									"columns": 2
+									"rows": 3
+									"hgap": 10
+									"vgap": 10
+								} ) {
+									name: "panel96"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label40"
+										"text": "选课学生学号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_U_Sno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label41"
+										"text": "选课课程编号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_U_Cno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label42"
+										"text": "课程成绩（选填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_U_Grade"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "Center"
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"title": "修改"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel79"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+									name: "panel97"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "North"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+									name: "panel98"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "West"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) {
+									"hgap": 5
+									"vgap": 5
+								} ) {
+									name: "panel99"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label46"
+										"text": "Tips： 如果想要查询所有的选课信息，请不要填写任何查找关键字，直接点击“查询”按钮即可。"
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "Center"
+									} )
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "button12"
+										"text": "确认查询"
+										addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button12ActionPerformed", true ) )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "South"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+									name: "panel100"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "East"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+									"columns": 2
+									"rows": 3
+									"hgap": 10
+									"vgap": 10
+								} ) {
+									name: "panel101"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label43"
+										"text": "选课学生学号（选填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_R_Sno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label44"
+										"text": "选课课程编号（选填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_R_Cnp"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label45"
+										"text": "课程成绩（选填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_R_Grade"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "Center"
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"title": "查询"
+							} )
+							add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+								name: "panel80"
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel81"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "North"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel82"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "West"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel83"
+									add( new FormComponent( "javax.swing.JButton" ) {
+										name: "button9"
+										"text": "确认增加"
+										addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button9ActionPerformed", true ) )
+									}, new FormLayoutConstraints( class java.lang.String ) {
+										"value": "North"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "South"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+									name: "panel84"
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "East"
+								} )
+								add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+									"columns": 2
+									"rows": 3
+									"hgap": 10
+									"vgap": 10
+								} ) {
+									name: "panel85"
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label20"
+										"text": "选课学生编号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_I_Sno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label21"
+										"text": "选课课程编号（必填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_I_Cno"
+									} )
+									add( new FormComponent( "javax.swing.JLabel" ) {
+										name: "label22"
+										"text": "课程成绩（选填）"
+									} )
+									add( new FormComponent( "javax.swing.JTextField" ) {
+										name: "SC_I_Grade"
+									} )
+								}, new FormLayoutConstraints( class java.lang.String ) {
+									"value": "Center"
+								} )
+							}, new FormLayoutConstraints( null ) {
+								"title": "增加"
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"title": "选课表"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 10 )
+			"size": new java.awt.Dimension( 790, 670 )
+		} )
+	}
+}
