@@ -1,3 +1,3 @@
 # SC_Manager
 
-**SC_Nanager for DataBase Experiment.**
+**SC_Manager for DataBase Experiment.**
